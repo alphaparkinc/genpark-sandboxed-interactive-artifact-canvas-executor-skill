@@ -1,0 +1,38 @@
+{
+  "name": "genpark-sandboxed-interactive-artifact-canvas-executor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Sandboxed interactive artifact canvas executor rendering responsive code components with live state synchronization.",
+  "author": "genpark",
+  "category": "interactive-canvas",
+  "tags": [
+    "claude-artifacts",
+    "code-sandbox",
+    "interactive-ui",
+    "live-execution",
+    "canvas-renderer"
+  ],
+  "inputs": {
+    "component_source_code": {
+      "type": "string"
+    },
+    "execution_runtime": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "execution_session_id": {
+      "type": "string"
+    },
+    "compilation_successful": {
+      "type": "boolean"
+    },
+    "render_latency_ms": {
+      "type": "integer"
+    },
+    "iframe_sandbox_preview_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
